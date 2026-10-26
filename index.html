@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07111d"><title>Pixel Manager</title><link rel="stylesheet" href="style.css"></head><body data-theme="neon"><main class="app">
+<header class="top"><div><div class="eyebrow">META PIXEL • CONTROL CENTER</div><div class="title">Page Manager 🚀</div><div class="sub">Mobile-first landing page editor</div></div><button class="iconbtn" id="refresh" aria-label="Refresh">↻</button></header>
+<section class="card"><div class="profile"><div class="avatar">MP</div><div><h2>Live landing page</h2><div class="sub">Firebase Realtime Database</div><div class="chips"><span class="chip" id="connection">● Connecting</span><span class="chip">4 themes</span></div></div></div></section>
+<section class="card"><div class="sectionhead">Auto-approve <span class="muted">Join requests</span></div><div class="switchrow"><div><strong>Enable status toggle</strong><div class="sub">Stored as a page setting (does not approve Telegram requests itself).</div></div><input id="autoApprove" class="switch" type="checkbox"></div></section>
+<section class="card"><div class="sectionhead">Landing page details</div>
+<label class="field"><span>Page / channel title</span><input id="titleInput" maxlength="80" placeholder="RAVI ADDER SERVICES 🚀"></label>
+<label class="field"><span>Telegram username or link</span><input id="telegramInput" placeholder="https://t.me/your_username"></label>
+<label class="field"><span>Subtitle / channel name</span><input id="subtitleInput" maxlength="100" placeholder="New RaviAdder"></label>
+<label class="field"><span>Subscriber label</span><input id="subsInput" maxlength="40" placeholder="4,302 subscribers"></label>
+<label class="field"><span>Service description</span><textarea id="descriptionInput" maxlength="700" placeholder="Write your service details here..."></textarea></label>
+<label class="field"><span>Button text</span><input id="buttonInput" maxlength="35" placeholder="✈ CONTACT ME 🚀"></label>
+<div class="sectionhead">Choose a theme <span class="muted">4 looks</span></div><div class="themegrid" id="themes"></div>
+<div class="actions"><button class="btn blue" id="loadBtn">↻ Load</button><button class="btn" id="saveBtn">▣ Save changes</button></div><div class="status" id="status"></div></section>
+<section class="card"><div class="sectionhead">Live preview <span class="muted">Mobile</span></div><div class="preview" id="preview"><div class="avatar">MP</div><h2 id="pTitle">RAVI ADDER SERVICES 🚀</h2><div class="sub" id="pSub">New RaviAdder · 4,302 subscribers</div><p id="pDesc">Meta Ads · Telegram Ads\nTelegram services and support</p><a class="btn" id="pButton" href="https://t.me/" target="_blank" rel="noopener">✈ CONTACT ME 🚀</a></div></section>
+<div class="notice">Security: Firebase rules set to <b>true / true</b> allow anyone to read, overwrite, or delete your data. This manager is not protected by a real login. Use Firebase Authentication and restrictive database rules before publishing.</div>
+<nav class="nav"><button class="active" data-nav="home">⌂<br>Home</button><button data-nav="edit">✎<br>Edit</button><button data-nav="themes">◉<br>Themes</button><button data-nav="settings">⚙<br>Settings</button></nav>
+</main><script type="module" src="app.js"></script></body></html>
